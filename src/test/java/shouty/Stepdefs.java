@@ -29,4 +29,17 @@ public class Stepdefs {
     public void lucy_hears_Sean_s_message() {
         assertEquals(asList(seanMessage), lucy.getMessageHeard());
     }
+
+    @Given("^Lucy shouts back to (\\w+)$")
+    public void lucy_shouts_back_to_X(String name) {
+    }
+
+    @Given("^Sarah has (\\d+) cucumbers in her bag$")
+    public void sarah_has_n_cucumbers_in_her_bag(int number) {
+    }
+
+    @Given("Sarah buys (no|\\d+) cucumbers")
+    public void sarah_buys_n_cucumbers(Object val) {
+    }
+
 }
